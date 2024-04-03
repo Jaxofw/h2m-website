@@ -5,6 +5,8 @@ import { useLocation, useNavigate } from 'react-router-dom'
 import Button from '@/components/Button'
 import Logo from '@/components/Logo'
 
+import Config from '@/../config.ts'
+
 const items = [
   {
     label: 'HOME',
@@ -21,6 +23,8 @@ const items = [
 ]
 
 const Navbar = () => {
+  const { discord } = Config.Links
+
   const { pathname } = useLocation()
   const navigate = useNavigate()
 
@@ -41,14 +45,13 @@ const Navbar = () => {
       </div>
       <Logo width={160} />
       <div className="flex h-full items-end space-x-4">
-        <a href="https://discord.gg/TBuqVx5Fdn">
-          <Button
-            icon={faDiscord}
-            className="h-11 rounded-b-none rounded-t-xl bg-button-secondary px-6 hover:bg-button-hover"
-          >
-            <h1 className="font-heebo text-md">OUR DISCORD</h1>
-          </Button>
-        </a>
+        <Button
+          icon={faDiscord}
+          className="h-11 rounded-b-none rounded-t-xl bg-button-secondary px-6 hover:bg-button-hover"
+          onClick={() => window.open(discord, '_blank')}
+        >
+          <h1 className="font-heebo text-md">OUR DISCORD</h1>
+        </Button>
         <Button
           icon={faArrowRight}
           className="h-11 rounded-b-none rounded-t-xl bg-button-primary px-10 hover:bg-button-hover"
