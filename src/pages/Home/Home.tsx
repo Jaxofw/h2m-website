@@ -16,7 +16,10 @@ const Home = () => {
   return (
     <>
       <div
-        style={{ background: `url(${Background}) no-repeat fixed center center` }}
+        style={{
+          background: `url(${Background}) no-repeat fixed center center`,
+          backgroundSize: 'cover',
+        }}
         className="flex w-full flex-col items-center justify-center"
       >
         <div className="inline-shadow my-64 h-auto w-auto rounded-3xl bg-black/0 px-20 py-20 backdrop-blur-lg">
