@@ -1,5 +1,17 @@
+import Navbar from '@/components/Navbar'
+import { Route, Routes } from 'react-router-dom'
+
 function App() {
-  return <h1 className="text-3xl font-bold">Hello world!</h1>
+  return (
+    <div className="h-full w-full">
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<div>Home</div>} />
+        <Route path="/about" element={<div>About</div>} />
+        <Route path="/install" element={<div>Install</div>} />
+      </Routes>
+    </div>
+  )
 }
 
 export default App
