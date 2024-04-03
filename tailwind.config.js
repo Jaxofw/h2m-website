@@ -9,6 +9,7 @@ export default {
         'button-secondary': 'rgba(95, 185, 70, 0.15)',
         'button-hover': 'rgba(95, 185, 70, 0.5)',
         footer: '#191919',
+        secondary: 'rgb(25,25,25)',
       },
     },
   },
