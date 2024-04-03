@@ -8,6 +8,7 @@ export default {
         'button-primary': 'rgb(95, 185, 70)',
         'button-secondary': 'rgba(95, 185, 70, 0.15)',
         'button-hover': 'rgba(95, 185, 70, 0.5)',
+        footer: '#191919',
       },
     },
   },
