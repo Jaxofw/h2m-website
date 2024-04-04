@@ -10,9 +10,11 @@ const About = () => {
 
   return (
     <>
-      <div className="flex h-auto flex-col items-center justify-center space-y-4 bg-secondary py-12">
-        <h1 className="font-['helvetica'] text-[56px] font-bold text-green">{header.title}</h1>
-        <p className="mx-[29rem] pb-5 text-center font-['helvetica'] text-lg leading-[1.8] text-white">
+      <div className="flex h-auto flex-col items-center justify-center space-y-6 bg-secondary px-10 py-12">
+        <h1 className="text font-['helvetica'] text-3xl font-bold text-green lg:text-[3.5rem]">
+          {header.title}
+        </h1>
+        <p className="pb-5 text-center font-['helvetica'] text-lg leading-[1.8] text-white lg:w-1/2">
           {header.description}
         </p>
         <Button

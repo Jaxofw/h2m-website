@@ -22,23 +22,25 @@ const Home = () => {
         }}
         className="flex w-full flex-col items-center justify-center"
       >
-        <div className="inline-shadow my-64 h-auto w-auto rounded-3xl bg-black/0 px-20 py-20 backdrop-blur-lg">
+        <div className="inline-shadow mx-10 my-64 h-auto w-auto rounded-3xl bg-black/0 px-20 py-20 backdrop-blur-lg">
           <div className="flex h-full flex-col items-center justify-center space-y-8 text-white">
             <h1 className="font-heebo text-[21px]">A MOD FOR</h1>
-            <h1 className="font-['helvetica'] text-6xl font-bold text-green">
+            <h1 className="text-center font-['helvetica'] text-6xl font-bold text-green">
               Modern Warfare Remastered
             </h1>
-            <h1 className="text-2xl">Recreating all of MW2 Multiplayer with new twists</h1>
+            <h1 className="text-center text-2xl">
+              Recreating all of MW2 Multiplayer with new twists
+            </h1>
             <div className="flex items-center justify-center space-x-4">
               <Button
                 icon={faArrowRight}
-                className="h-14 rounded-2xl bg-button-primary px-14 text-white outline outline-1 outline-white/25 hover:bg-button-hover"
+                className="h-14 rounded-2xl bg-button-primary px-10 text-white outline outline-1 outline-white/25 hover:bg-button-hover lg:px-14"
                 onClick={() => navigate('/install')}
               >
                 <h1 className="font-heebo text-md">PLAY NOW</h1>
               </Button>
               <Button
-                className="h-14 rounded-2xl bg-button-secondary px-16 text-white outline outline-1 outline-white/25 hover:bg-button-hover"
+                className="h-14 rounded-2xl bg-button-secondary px-12 text-white outline outline-1 outline-white/25 hover:bg-button-hover lg:px-16"
                 onClick={() => navigate('/about')}
               >
                 <h1 className="font-heebo text-md">READ MORE</h1>
