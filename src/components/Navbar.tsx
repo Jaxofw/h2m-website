@@ -69,7 +69,7 @@ const Navbar = () => {
         </Button>
       </div>
       <button
-        className="absolute right-0 mr-10 rounded-md bg-secondary p-2 lg:hidden"
+        className="absolute right-0 mr-10 rounded-md bg-secondary p-2 hover:bg-white/20 lg:hidden"
         onClick={() => setMenuOpen(!menuOpen)}
       >
         <svg
@@ -94,7 +94,7 @@ const Navbar = () => {
               <li key={label}>
                 <button
                   onClick={() => handleMenuClick(path)}
-                  className="font-heebo w-full border-b-2 py-2 text-lg"
+                  className="font-heebo w-full border-b-2 py-2 text-lg hover:bg-white/20"
                 >
                   {label}
                 </button>
