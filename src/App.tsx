@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 
 import Home from '@/pages/Home/Home'
 import About from '@/pages/About/About'
+import Install from '@/pages/Install/Install'
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/install" element={<div>Install</div>} />
+        <Route path="/install" element={<Install />} />
       </Routes>
     </div>
   )
