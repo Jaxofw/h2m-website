@@ -22,13 +22,13 @@ const Home = () => {
         }}
         className="flex w-full flex-col items-center justify-center"
       >
-        <div className="inline-shadow mb-32 mt-20 rounded-3xl bg-black/0 py-20 backdrop-blur-lg lg:my-64 lg:px-20">
+        <div className="inline-shadow mb-32 mt-20 rounded-3xl bg-black/0 py-20 backdrop-blur-lg md:px-20 lg:my-64">
           <div className="flex h-full flex-col items-center justify-center space-y-8 text-white">
             <h1 className="font-heebo text-2xl lg:text-xl">A MOD FOR</h1>
             <h1 className="text-center font-['helvetica'] text-2xl font-bold text-green lg:text-6xl">
               Modern Warfare Remastered
             </h1>
-            <h1 className="text-center text-2xl">
+            <h1 className="px-10 text-center text-2xl lg:px-0">
               Recreating all of MW2 Multiplayer with new twists
             </h1>
             <div className="flex items-center justify-center space-x-4">
