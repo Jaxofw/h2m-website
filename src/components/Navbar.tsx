@@ -100,6 +100,14 @@ const Navbar = () => {
                 </button>
               </li>
             ))}
+            <li>
+              <button
+                className="font-heebo w-full border-b-2 py-2 text-lg hover:bg-white/20"
+                onClick={() => window.open(discord, '_blank')}
+              >
+                OUR DISCORD
+              </button>
+            </li>
           </ul>
         </div>
       )}
