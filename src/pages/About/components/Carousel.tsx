@@ -5,9 +5,10 @@ interface CarouselProps {
   title: string
   description: string
   images: string[]
+  className?: string
 }
 
-const Carousel = ({ type, title, description, images }: CarouselProps) => {
+const Carousel = ({ type, title, description, images, className }: CarouselProps) => {
   const [emblaRef] = useEmblaCarousel()
 
   const cover = ({ type }: { type: 'left' | 'right' }) => {
@@ -27,7 +28,7 @@ const Carousel = ({ type, title, description, images }: CarouselProps) => {
 
   return (
     <div
-      className={`flex w-full flex-col items-center justify-between lg:h-auto lg:flex-row ${type === 'left' ? 'bg-secondary pl-4 lg:pl-[70px]' : 'pr-4 lg:pr-[70px]'}`}
+      className={`flex w-full flex-col items-center justify-between lg:h-auto lg:flex-row ${type === 'left' ? 'bg-secondary pl-4 lg:pl-[70px]' : 'pr-4 lg:pr-[70px]'} ${className}`}
     >
       {type === 'right' && cover({ type: 'right' })}
       <div className="h-full w-full py-12">

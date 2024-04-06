@@ -25,8 +25,19 @@ const About = () => {
         </Button>
       </div>
       {carousels.map((carousel, index) => (
-        <Carousel key={index} {...carousel} type={carousel.type as 'left' | 'right'} />
+        <Carousel
+          key={index}
+          {...carousel}
+          type={carousel.type as 'left' | 'right'}
+          className="hidden lg:flex"
+        />
       ))}
+      {/* MOBILE CAROUSELS */}
+      <Carousel {...carousels[0]} type="right" className="flex lg:hidden" />
+      <Carousel {...carousels[1]} type="right" className="flex bg-secondary lg:hidden" />
+      <Carousel {...carousels[2]} type="right" className="flex lg:hidden" />
+      <Carousel {...carousels[3]} type="right" className="flex bg-secondary lg:hidden" />
+      <Carousel {...carousels[4]} type="right" className="flex lg:hidden" />
       <Footer />
     </>
   )
