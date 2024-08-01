@@ -20,16 +20,16 @@ const Install = () => {
               here.
             </a>
           </p>
-          <div className="text-base text-white md:text-[1.5rem]">
-            <p className="font-bold underline">STEP 1: Install Modern Warfare Remastered</p>
-            You will need the full game installed (including the singleplayer)
-            <br />
-            if you plan on playing our custom maps.
+          <div className="space-y-3 text-base text-white md:text-[1.5rem]">
+            <h1 className="font-bold underline">STEP 1: Install Modern Warfare Remastered</h1>
+            <p>
+              You will need Call of Duty: Modern Warfare Remastered (2016) multiplayer installed.
+            </p>
           </div>
-          <p className="text-lg text-white md:text-[22px]">
-            <p className="font-bold underline">STEP 2: Install the H2M-Mod Launcher</p>
-            The download will be provided here when it releases.
-          </p>
+          <div className="space-y-3 text-lg text-white md:text-[22px]">
+            <h1 className="font-bold underline">STEP 2: Install the H2M-Mod Launcher</h1>
+            <p>The download will be provided here when it releases.</p>
+          </div>
         </div>
       </div>
       <Footer />
