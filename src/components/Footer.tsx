@@ -3,11 +3,17 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import Config from '@/../config.ts'
 
-const Footer = () => {
+type FooterProps = {
+  className?: string
+}
+
+const Footer = ({ className }: FooterProps) => {
   const { discord, twitter } = Config.Links
 
   return (
-    <div className="flex h-1/6 flex-col items-center justify-center bg-footer text-white">
+    <div
+      className={`flex h-1/6 flex-col items-center justify-center space-y-1 text-white ${className && className}`}
+    >
       <h1 className="text-lg font-semibold">Follow Us</h1>
       <div className="flex space-x-8 pt-4 text-xl">
         <button

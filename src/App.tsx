@@ -1,8 +1,8 @@
-import Navbar from '@/components/Navbar'
 import { Route, Routes } from 'react-router-dom'
 
-import Home from '@/pages/Home/Home'
+import Navbar from '@/components/Navbar'
 import About from '@/pages/About/About'
+import Home from '@/pages/Home/Home'
 import Install from '@/pages/Install/Install'
 
 function App() {

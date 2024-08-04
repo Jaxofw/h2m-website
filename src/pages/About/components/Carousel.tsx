@@ -1,6 +1,7 @@
 import useEmblaCarousel from 'embla-carousel-react'
 
 interface CarouselProps {
+  id: number
   type: 'left' | 'right'
   title: string
   description: string
@@ -8,7 +9,7 @@ interface CarouselProps {
   className?: string
 }
 
-const Carousel = ({ type, title, description, images, className }: CarouselProps) => {
+const Carousel = ({ id, type, title, description, images, className }: CarouselProps) => {
   const [emblaRef] = useEmblaCarousel()
 
   const cover = ({ type }: { type: 'left' | 'right' }) => {
@@ -28,7 +29,7 @@ const Carousel = ({ type, title, description, images, className }: CarouselProps
 
   return (
     <div
-      className={`flex w-full flex-col items-center justify-between lg:h-auto lg:flex-row ${type === 'left' ? 'bg-secondary pl-4 lg:pl-[70px]' : 'pr-4 lg:pr-[70px]'} ${className}`}
+      className={`flex w-full flex-col items-center justify-between lg:h-auto lg:flex-row ${id === 1 || id === 3 ? 'bg-secondary pl-4 lg:pl-[70px]' : 'pr-4 lg:pr-[70px]'} ${className}`}
     >
       {type === 'right' && cover({ type: 'right' })}
       <div className="h-full w-full py-12">

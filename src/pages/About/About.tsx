@@ -1,7 +1,6 @@
 import Carousel from './components/Carousel'
 
 import Config from '@/../config.ts'
-
 import Button from '@/components/Button'
 import Footer from '@/components/Footer'
 
@@ -24,21 +23,25 @@ const About = () => {
           {header.button.text}
         </Button>
       </div>
-      {carousels.map((carousel, index) => (
+      {carousels.map((carousel, key) => (
         <Carousel
-          key={index}
+          key={key}
           {...carousel}
+          id={key}
           type={carousel.type as 'left' | 'right'}
           className="hidden lg:flex"
         />
       ))}
       {/* MOBILE CAROUSELS */}
-      <Carousel {...carousels[0]} type="right" className="flex lg:hidden" />
-      <Carousel {...carousels[1]} type="right" className="flex bg-secondary lg:hidden" />
-      <Carousel {...carousels[2]} type="right" className="flex lg:hidden" />
-      <Carousel {...carousels[3]} type="right" className="flex bg-secondary lg:hidden" />
-      <Carousel {...carousels[4]} type="right" className="flex lg:hidden" />
-      <Footer />
+      {carousels.map((carousel, key) => (
+        <Carousel
+          {...carousel}
+          id={key}
+          type="right"
+          className={`flex lg:hidden ${key === 0 || (key === 2 && 'bg-secondary')} `}
+        />
+      ))}
+      <Footer className="bg-black" />
     </>
   )
 }

@@ -4,10 +4,10 @@ import { faDiscord } from '@fortawesome/free-brands-svg-icons'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { useLocation, useNavigate } from 'react-router-dom'
 
+import Config from '@/../config.ts'
 import Button from '@/components/Button'
 import Logo from '@/components/Logo'
 
-import Config from '@/../config.ts'
 
 const items = [
   {

@@ -1,28 +1,25 @@
-import Maps1 from './src/assets/maps1.png'
-import Maps2 from './src/assets/maps2.png'
-import Maps3 from './src/assets/maps3.png'
-import Maps4 from './src/assets/maps4.png'
-
 import Cac1 from './src/assets/cac1.png'
 import Cac2 from './src/assets/cac2.png'
 import Cac3 from './src/assets/cac3.png'
 import Cac4 from './src/assets/cac4.png'
 import Cac5 from './src/assets/cac5.png'
-
+import Maps1 from './src/assets/maps1.png'
+import Maps2 from './src/assets/maps2.png'
+import Maps3 from './src/assets/maps3.png'
+import Maps4 from './src/assets/maps4.png'
+import Progress1 from './src/assets/progress1.png'
+import Progress2 from './src/assets/progress2.gif'
+import Progress3 from './src/assets/progress3.png'
+import Progress4 from './src/assets/progress4.png'
 import Streaks1 from './src/assets/streaks1.png'
 import Streaks2 from './src/assets/streaks2.png'
 import Streaks3 from './src/assets/streaks3.png'
 import Streaks4 from './src/assets/streaks4.png'
 import Streaks5 from './src/assets/streaks5.png'
 
-import Progress1 from './src/assets/progress1.png'
-import Progress2 from './src/assets/progress2.gif'
-import Progress3 from './src/assets/progress3.png'
-import Progress4 from './src/assets/progress4.png'
-
-import Offline1 from './src/assets/offline1.png'
-import Offline2 from './src/assets/offline2.png'
-import Offline3 from './src/assets/offline3.png'
+// import Offline1 from './src/assets/offline1.png'
+// import Offline2 from './src/assets/offline2.png'
+// import Offline3 from './src/assets/offline3.png'
 
 const Config = {
   Links: {
@@ -51,7 +48,7 @@ const Config = {
         type: 'left',
         title: 'Create a Class',
         description:
-          'Utilize the MW2 Campaign Remastered weapons alongside a few fan favorite Modern Warfare Remastered weapons. Remastered MW2 attachments, perks, some pro perks, equipment, and death streaks are all featured as well. And yes, you can have two attachments with Bling.',
+          'Utilize the MW2 Campaign Remastered weapons alongside a few fan favorite Modern Warfare Remastered weapons. Remastered MW2 attachments, perks, pro perks, equipment, and death streaks are all featured as well. And yes, you can have two attachments with Bling.',
         images: [Cac1, Cac2, Cac3, Cac4, Cac5],
       },
       {
@@ -68,13 +65,13 @@ const Config = {
           'Progression is very similar to the classic MW2 Multiplayer, but with new additions. There are 70 ranks for each of our 10 prestiges, however, after hitting Prestige 10, players can progress up to level 1000. The classic camos are remastered and can be earned, alongside new ones (including mastery camos & special animated camos). The classic MW2 calling cards and emblems return as well, along with new ones.',
         images: [Progress1, Progress2, Progress3, Progress4],
       },
-      {
-        type: 'right',
-        title: 'Offline Play',
-        description:
-          'In H2M-Mod, we added an offline mode that allows players to play and progress offline, completely separate from the online progression and experience. There is also progression in online private matches for those that wish to play with friends or only bots, without being forced to play online servers.',
-        images: [Offline1, Offline2, Offline3],
-      },
+      // {
+      //   type: 'right',
+      //   title: 'Offline Play',
+      //   description:
+      //     'In H2M-Mod, we added an offline mode that allows players to play and progress offline, completely separate from the online progression and experience. There is also progression in online private matches for those that wish to play with friends or only bots, without being forced to play online servers.',
+      //   images: [Offline1, Offline2, Offline3],
+      // },
     ],
   },
 }
