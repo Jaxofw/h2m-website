@@ -33,7 +33,7 @@ const Config = {
         'H2 Multiplayer Mod (H2M-Mod for short) is a mod for Call of Duty: Modern Warfare Remastered (H1) that aims to recreate the original Modern Warfare 2 Multiplayer experience with new twists. The mod features a wide variety of maps, new progression, unique camos, remastered weapons, custom attachments, and more. The original MW2 killstreaks make a return as well, completely changing the way Modern Warfare Remastered feels and plays.',
       button: {
         text: 'Watch Trailer',
-        link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+        link: 'https://youtu.be/VwBEmMPxuRU',
       },
     },
     carousels: [
